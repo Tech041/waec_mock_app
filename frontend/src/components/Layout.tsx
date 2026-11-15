@@ -8,18 +8,18 @@ export default function Layout() {
     <div className="flex min-h-screen flex-col">
       <header className="border-b border-slate-200 bg-white">
         <nav className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
-          <Link to="/" className="text-lg font-bold text-brand">
-            WAEC<span className="text-slate-800">Mock</span>
+          <Link to="/" className="text-lg font-bold text-blue-800">
+            Pass<span className="text-slate-800">Cheat</span>
           </Link>
 
           {user ? (
             <div className="flex items-center gap-3 text-sm">
-              <span className="hidden text-slate-500 sm:inline">
-                Hi, {user.username}
+              <span className=" text-green-800 font-bold capitalize">
+                {user.username.slice(0, 6)}...
               </span>
               <button
                 onClick={logout}
-                className="rounded-full border border-slate-300 px-4 py-1.5 font-medium hover:bg-slate-100"
+                className="rounded-full bg-red-600 text-white  px-4 py-1.5 font-medium "
               >
                 Log out
               </button>
