@@ -59,7 +59,7 @@ export default function Exam() {
     <div className="mx-auto max-w-2xl">
       {!online && !user && (
         <p className="mb-4 rounded-lg bg-amber-50 px-4 py-2 text-center text-sm text-amber-800">
-          📡 You're offline. Guests can answer {OFFLINE_LIMIT} questions
+           You're offline. Guests can answer {OFFLINE_LIMIT} questions
           offline. Log in to continue.
         </p>
       )}
@@ -69,9 +69,7 @@ export default function Exam() {
         <Link to="/" className="text-slate-500 hover:text-brand">
           ← Exit
         </Link>
-        <span className="font-semibold">
-          {subject.emoji} {subject.name}
-        </span>
+        <span className="font-semibold">{subject.name}</span>
         <span className="text-slate-500">
           {index + 1} / {total}
         </span>

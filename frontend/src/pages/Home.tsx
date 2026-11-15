@@ -58,7 +58,7 @@ export default function Home() {
                   : "border-slate-300 bg-white hover:border-blue-600"
               }`}
             >
-              {s.emoji} {s.name}
+             {s.name}
             </button>
           ))}
         </div>
