@@ -103,7 +103,7 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
         <Link
           to={isSignup ? "/login" : "/signup"}
           state={location.state}
-          className="font-medium text-brand hover:underline"
+          className="font-medium text-blue-600 hover:underline"
         >
           {isSignup ? "Log in" : "Sign up"}
         </Link>

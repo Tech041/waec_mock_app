@@ -14,7 +14,7 @@ export default function Layout() {
 
           {user ? (
             <div className="flex items-center gap-3 text-sm">
-              <span className=" text-green-800 font-bold capitalize">
+              <span className=" text-black italic animate-pulse capitalize">
                 {user.username.slice(0, 6)}...
               </span>
               <button
@@ -27,14 +27,8 @@ export default function Layout() {
           ) : (
             <div className="flex items-center gap-2 text-sm">
               <Link
-                to="/signup"
-                className="rounded-full border border-brand px-4 py-1.5 font-medium text-brand hover:bg-blue-50"
-              >
-                Sign up
-              </Link>
-              <Link
                 to="/login"
-                className="rounded-full bg-brand px-4 py-1.5 font-medium text-white hover:bg-brand-dark"
+                className="rounded-full bg-black px-4 py-1.5 font-medium text-white"
               >
                 Sign in
               </Link>

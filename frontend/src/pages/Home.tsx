@@ -21,7 +21,7 @@ export default function Home() {
   };
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 ">
       {/* Hero */}
       <section className="text-center">
         <h1 className="text-3xl font-extrabold leading-tight sm:text-5xl">
@@ -58,7 +58,7 @@ export default function Home() {
                   : "border-slate-300 bg-white hover:border-blue-600"
               }`}
             >
-             {s.name}
+              {s.name}
             </button>
           ))}
         </div>
